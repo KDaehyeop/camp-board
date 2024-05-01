@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table with Bootstrap</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 컨테이너를 중앙에 정렬하고 위아래 및 양옆에 공백 추가 */
+        .container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<script src="js/main.js"></script>
+<div class="container text-center">
+    <h2>Dynamic Table</h2>
+
+    <!-- Table -->
+    <div class="table-responsive">
+        <table id="dataTable" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mt-4">
+        <button id="button1" class="btn btn-primary mr-2">포스팅 생성하기</button>
+        <button id="button2" class="btn btn-secondary">Button 2</button>
+    </div>
+
+</div>
+
+</body>
+</html>
